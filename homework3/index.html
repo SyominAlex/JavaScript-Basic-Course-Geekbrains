@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>ДЗ №3 JS базовый курс</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <a href="#">Главная</a>
+            <a href="task3-1.html">Задача №1</a>
+            <a href="task3-2.html">Задачи №2 и 3</a>
+            <a href="task3-4.html">Задача №4*</a>
+            <a href="task3-5.html">Задача №5*</a>
+        </div>
+        <h1>Домашняя работа к уроку №3 <br><q>базового курса JavaScript</q> <a href="https://geekbrains.ru">GeekBrains</a></h1>
+        <div class="center">
+            <img src="img/photo.jpg">
+            <div class="box_text">
+                <p><b>
+                    <script language="JavaScript">
+                        day = new Date(); hour = day.getHours(); if (hour>=5 && hour<12) greeting = "Доброе утро."; else { if (hour>=12 && hour<18) greeting = "Добрый день."; else { if (hour>=18 && hour<24) greeting = "Добрый вечер."; else { if (hour>=0 && hour<5) greeting = "Доброй ночи."; } } } document.write(greeting);
+                    </script>
+                </b> С Вами студент факультета веб-разработки <a href="https://geekbrains.ru">GeekBrains</a> <i>Алексей Сёмин</i>.</p>
+                <p>Предлагаю Вашему вниманию домашнюю работу к уроку №3 базового курса JavaScript <a href="https://geekbrains.ru">GeekBrains</a>.</p>
+                <ul>
+                    <li><a href="task3-1.html">Задача №1</a></li>
+                    <li><a href="task3-2.html">Задачи №2 и 3</a></li>
+                    <li><a href="task3-4.html">Задача №4*</a></li>
+                    <li><a href="task3-5.html">Задача №5*</a></li>
+                </ul>
+                <br>
+                <p><b>Текст задания.</b> Урок 3. Циклы, массивы, структуры данных</p>
+                <p>1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100.</p>
+                <p>2. С этого урока начинаем работать с функционалом интернет-магазина. Предположим, есть сущность корзины. Нужно реализовать функционал подсчета стоимости корзины в зависимости от находящихся в ней товаров.</p>
+                <p>3. Товары в корзине хранятся в массиве. Задачи: <br>
+                    a) организовать такой массив для хранения товаров в корзине; <br>
+                    b) организовать функцию countBasketPrice, которая будет считать стоимость корзины.</p>
+                <p>4.*Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. Выглядеть это должно так: <br>
+                    for(…){// здесь пусто}</p>
+                <p>5. *Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5: <br>
+                    x <br>
+                    xx <br>
+                    xxx <br>
+                    xxxx <br>
+                    xxxxx</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Copyright &copy; <a href="https://vk.com/a_semin">Alex Syomin</a></div>
+</body>
+</html>
