@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 4 - RegExp</title>
+</head>
+<body>
+<script>
+       const text = "One: 'Hi Mary.' Two: 'Oh, hi.'\n" +
+        "One: 'How are you doing?'\n" +
+        "Two: 'I'm doing alright. How about you?'\n" +
+        "One: 'Not too bad. The weather is great isn't it?'\n" +
+        "Two: 'Yes. It's absolutely beautiful today.'\n" +
+        "One: 'I wish it was like this more frequently.'\n" +
+        "Two: 'Me too.'\n" +
+        "One: 'So where are you going now?'\n" +
+        "Two: 'I'm going to meet a friend of mine at the department store'\n" +
+        "One: 'Going to do a little shopping?'\n" +
+        "Two: 'Yeah, I have to buy some presents for my parents.'\n" +
+        "One: 'What's the occasion?'\n" +
+        "Two: 'It's their anniversary.'\n" +
+        "One: 'That's great. Well, you better get going. You don't want to be late.'\n" +
+        "Two: 'I'll see you next time.'\n" +
+        "One: 'Sure.' Bye.'";
+
+    //ДЗ №1 https://regex101.com/r/N72YLM/2
+    const regExp1 = /'/g;
+    console.log(text.replace(regExp1, '"'));
+
+    //ДЗ №2 https://regex101.com/r/N72YLM/3
+    const regExp2 = /\B'/g;
+    console.log(text.replace(regExp2, '"'));
+
+    //ДЗ №3a https://regex101.com/r/N72YLM/4
+    const name = 'Jjdnsd*-i*h45kjh098sf35324-/';
+    const regExp3a = /[^a-zA-Z]/gi;
+    console.log(regExp3a.test(name));
+    console.log(name.replace(regExp3a, ''));
+    console.log(name.match(/[a-zA-Z]/gi));
+
+    //ДЗ №3b. Телефон имеет вид +7(000)000-0000
+    const tel = '+7(000)000-0000 +7(123)456-7890 70000000000 0000000000';
+    const regExp3b = /\+[7]\(\d{3}\)\d{3}-\d{4}/g;
+    console.log(regExp3b.test(tel));
+    console.log(tel.match(regExp3b).join(''));
+
+    //ДЗ №3c. E-mail имеет вид mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru. /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i
+    const mail = 'mymail@mail.ru my.mail@mail.ru my-mail@mail.ru';
+    const regExp3c = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
+    console.log(regExp3c.test(mail));
+    console.log(mail.match(regExp3c));
+
+</script>
+</body>
+</html>
