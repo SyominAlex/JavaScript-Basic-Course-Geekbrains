@@ -1,0 +1,41 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    width: 600px;
+}
+
+.menu {
+    justify-content: flex-end;
+}
+
+.btn-cart {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid darkorange;
+    color: darkorange;
+}
+
+.btn-cart:hover {
+    background-color: dimgrey;
+    border: 1px solid dimgrey;
+    transition: 1s;
+}
+
+.products {
+    justify-content: space-between;
+}
+
+.product-item {
+    padding: 10px;
+    margin: 10px;
+    color: darkorange;
+    outline: 1px solid darkorange;
+    border-collapse: collapse;
+    width: 100px;
+    text-align: center;
+}
+
+.buy {
+    color: darkorange;
+}
