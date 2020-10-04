@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+<form name="" action="" id="form">
+    <fieldset>
+        <legend>Собери свой габургер</legend>
+        <div class="row">
+            <p><b>Размер имеет значение</b></p>
+            <div class="radio-variant">
+                <input type="radio" name="size" id="small" value="small" checked/>
+                <label for="small">маленький (50 рублей, 20 калорий)</label>
+            </div>
+            <div class="radio-variant">
+                <input type="radio" name="size" id="large" value="large"/>
+                <label for="large">БОЛЬШОЙ (100 рублей, 40 калорий)</label>
+            </div>
+        </div>
+        <div class="row additions">
+            <p><b>Начинка</b></p>
+            <div class="radio-variant">
+                <input type="radio" name="add" id="cheese" value="cheese" checked/>
+                <label for="cheese">Сыр (10 рублей, 20 калорий)</label>
+            </div>
+            <div class="radio-variant">
+                <input type="radio" name="add" id="salad" value="salad"/>
+                <label for="salad">Салат (20 рублей, 5 калорий)</label>
+            </div>
+            <div class="radio-variant">
+                <input type="radio" name="add" id="potato" value="potato"/>
+                <label for="potato">Картофель фри (15 рублей, 10 калорий)</label>
+            </div>
+            <div class="checkbox-variant">
+                <input type="checkbox" name="add" id="spicies" value="spicies" checked/>
+                <label for="spicies">Приправы (+15 рублей, +0 калорий)</label>
+            </div>
+            <div class="checkbox-variant">
+                <input type="checkbox" name="add" id="mayo" value="mayo" checked/>
+                <label for="mayo">Майонез (+20 рублей, +5 калорий)</label>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Рассчитать"/>
+        </div>
+    </fieldset>
+    <br/>
+    <div id="result">
+        <div><b>Стоимость:</b> <span id="price">0</span> &#8381;</div>
+        <div><b>Калорийность:</b> <span id="calories">0</span> кКал</div>
+    </div>
+</form>
+</body>
+</html>
