@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="logo">Интернет-магазин</div>
+        <div class="cart">
+            <filter-el></filter-el>
+<!--        перетащили разметку в компонент FilterComp и добавили на страницу компонент фильтрации filter-el -->
+<!--            <form action="#" method="post" class="search-form" @submit.prevent="FilterGoods">-->
+<!--                <input type="text" class="search-field" v-model="userSearch">-->
+<!--                <button class="btn-search" type="submit">-->
+<!--                    <i class="fas fa-search"></i>-->
+<!--                </button>-->
+<!--            </form>-->
+            <cart ref="cart"></cart>
+        </div>
+    </header>
+    <main>
+        <products ref="products"></products>
+        <error ref="error"></error>
+    </main>
+</div>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/ProductsComponent.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/ErrorComp.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+</html>
